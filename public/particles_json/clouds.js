@@ -25,6 +25,9 @@ export var clouds = {
           },
           {
             "src": "../imgs/clouds/cloud2.png"
+          },
+          {
+            "src": "../imgs/clouds/cloud3.png"
           }
         ]
       },
