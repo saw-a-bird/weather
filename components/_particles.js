@@ -3,12 +3,12 @@ import { loadFull } from "tsparticles"
 import { useCallback } from "react"
 import particleCSS from '../styles/particles.module.css'
 import { useEffect } from 'react'
-import { rain } from '../public/particles_json/rain'
-import { clouds } from '../public/particles_json/clouds'
+import { weather_conditions } from '../public/weather_conditions'
+import { rain } from '../public/rain'
+import { clouds } from '../public/clouds'
+import { snow } from '../public/snow'
+import { night } from '../public/night'
 import { useState } from 'react'
-import { weather_conditions } from '../public/particles_json/weather_conditions'
-import { snow } from '../public/particles_json/snow'
-import { night } from '../public/particles_json/night'
 
 export function BackgroundArea ({ seasonId, api, dayPart }) {
     const [type, setType] = useState("Clear")
