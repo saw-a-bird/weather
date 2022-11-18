@@ -1,53 +1,61 @@
-{
+export var night = {
     "particles": {
       "number": {
-        "value": 150,
+        "value": 355,
         "density": {
           "enable": true,
-          "value_area": 700
+          "value_area": 789.1476416322727
         }
       },
       "color": {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "star",
         "stroke": {
           "width": 0,
-          "color": "#ffffff"
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
         }
       },
       "opacity": {
-        "value": 0.25,
-        "random": true,
+        "value": 0.48927153781200905,
+        "random": false,
         "anim": {
           "enable": true,
-          "speed": 0.25,
+          "speed": 0.2,
           "opacity_min": 0,
           "sync": false
         }
       },
       "size": {
-        "value": 8,
+        "value": 2,
         "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 2,
           "size_min": 0,
-          "sync": true
+          "sync": false
         }
       },
       "line_linked": {
         "enable": false,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 1,
-        "width": 20
+        "opacity": 0.4,
+        "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 1,
-        "direction": "top-right",
+        "speed": 0.2,
+        "direction": "none",
         "random": true,
         "straight": false,
         "out_mode": "out",
@@ -63,11 +71,11 @@
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "repulse"
+          "enable": true,
+          "mode": "bubble"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
@@ -80,11 +88,11 @@
           }
         },
         "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 12,
-          "speed": 6
+          "distance": 83.91608391608392,
+          "size": 1,
+          "duration": 3,
+          "opacity": 1,
+          "speed": 3
         },
         "repulse": {
           "distance": 200,
@@ -99,4 +107,4 @@
       }
     },
     "retina_detect": true
-  }
+};

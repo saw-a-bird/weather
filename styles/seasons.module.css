@@ -1,0 +1,223 @@
+
+
+.seasonsContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjNhNiIvPjxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjMDA3MmMwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  /* background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0063a6), color-stop(15%, #0072c0), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(top, #0063a6 0%, #0072c0 15%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(top, #0063a6 0%, #0072c0 15%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #0063a6 0%, #0072c0 15%, #ffffff 100%); */
+}
+
+.grass {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 5vmin;
+  max-height: 62px;
+  background: transparent url(../public/imgs/seasons/grassBk.png) repeat-x;
+  background-size: contain;
+  z-index: 1;
+}
+
+.cloud {
+  position: absolute;
+  background: #fff;
+  width: 30vw;
+  height: 10vw;
+  top: 15%;
+  left: 10%;
+  border-radius: 5vw;
+}
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+.cloud:before {
+  width: 25%;
+  height: 75%;
+  top: -35%;
+  left: 15%;
+}
+.cloud:after {
+  width: 50%;
+  height: 150%;
+  top: -60%;
+  left: 33%;
+}
+
+.cloud2 {
+  width: 21vw;
+  height: 7vw;
+  top: 8%;
+  left: 67%;
+}
+
+.season {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  -moz-transition: all 1s ease-out, opacity 0.5s ease-out;
+  -o-transition: all 1s ease-out, opacity 0.5s ease-out;
+  -webkit-transition: all 1s ease-out, opacity 0.5s ease-out;
+  transition: all 1s ease-out, opacity 0.5s ease-out;
+}
+.season:before, .season:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.season.active {
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
+.season.inactive {
+  opacity: 0;
+}
+
+.spring {
+  background-image: url(../public/imgs/seasons/springTree.svg);
+}
+.spring:after {
+  /* background: linear-gradient(to bottom, rgba(47, 219, 245, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%); */
+  -webkit-filter: saturate(1);
+  filter: saturate(1);
+}
+
+.summer {
+  left: 25%;
+  background-image: url(../public/imgs/seasons/summerTree.svg);
+}
+.summer:before {
+  /* background: url(https://dodozhang21.github.io/svg/fourSeasons/bird.svg) no-repeat center center; */
+  /* background-size: 10% 10%; */
+}
+.summer:after {
+  /* background-image: linear-gradient(to bottom, rgba(68, 148, 211, 0.7) 0%, rgba(243, 216, 145, 0.5) 60%, rgba(243, 216, 145, 0.3) 70%, rgba(243, 216, 145, 0.3) 80%, rgba(120, 90, 13, 0.3) 100%); */
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.fall {
+  left: 50%;
+  background-image: url(../public/imgs/seasons/fallTree.svg);
+}
+
+.fall:before {
+  background-size: contain;
+}
+
+.fall:after {
+  /* background: rgba(254, 83, 2, 0.2); */
+  -webkit-filter: saturate(1);
+  filter: saturate(1);
+}
+
+.winter {
+  left: 75%;
+  background-image: url(../public/imgs/seasons/winterTree.svg);
+  background-position: center 95%;
+}
+.winter:before {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 100% 6%;
+  background-position: center 140%, center bottom;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.winter:after {
+  /* background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%); */
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.winter.active:before {
+  background-size: 50% 25%,  100% 6%;
+  background-position: center 112%, center bottom;
+}
+
+
+.loadingCenter { 
+  height: 100vh;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.loadingCenter p {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-45%, -50%);
+  transform: translate(-45%, -50%);
+  font-size: 50px;
+  color: white
+}
+
+.optionsBtn {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  color:white;
+}
+
+
+.sandboxBtn {
+  border: 1px solid #a5a5a5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #b5dcff;
+  /* margin: 0 auto; */
+  /* float: right */
+}
+
+.sandboxBtn:not(:disabled):hover {
+  border-color: #a5a5a5;
+  background-color: #9cd1ff;
+  /* margin: 0 auto; */
+  /* float: right */
+}
+
+.sandboxBtn:disabled {
+  border-color: #a5a5a5;
+  background-color: rgb(190, 204, 217);
+  color: #7c7c7c;
+  /* margin: 0 auto; */
+  /* float: right */
+}
+
+
+
+.details_info {
+  font-size: 12px;
+  display:block
+}
+
+.info_bottom_bar {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

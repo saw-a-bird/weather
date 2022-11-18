@@ -1,0 +1,40 @@
+.container {
+    margin: auto auto 0;
+    display: flex;
+    justify-content:left;
+    -ms-flex-align: left;
+    -webkit-align-items: left;
+    -webkit-box-align: left;
+    align-items: end;
+    border-radius: 30px;
+    height:100vh;
+    bottom:20px;
+    left: 20px;
+    z-index: 200;
+  }
+  
+  .container > * {
+    z-index: 200;
+    padding: 5px
+  }
+
+  .container > p {
+    color: black;
+    margin:20px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .container > div {
+    /* border: black solid 0.5px; */
+    /* border-radius: 50%; */
+    margin:20px;
+    margin-right: 5PX; 
+  }
+  
+  .container svg {
+    display: block;
+    transition: all 0.4s ease;
+  }
+  
+  

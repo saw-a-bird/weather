@@ -1,7 +1,7 @@
 {
-  "name": "portfilio",
+  "name": "weather",
   "version": "0.1.0",
-  "homepage": "https://mahdi-abdelkebir.github.io/portfilio/",
+  "homepage": "https://mahdi-abdelkebir.github.io/weather/",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
@@ -15,6 +15,9 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
+    "browser-env": "^3.3.0",
+    "color-between": "^1.0.2",
+    "compass": "^0.1.1",
     "embla-carousel-react": "^7.0.3",
     "gsap": "^3.11.3",
     "jquery": "^3.6.1",
@@ -23,8 +26,11 @@
     "react": "^17.0.2",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.6.0",
     "react-particles": "^2.3.3",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "scss": "^0.2.4",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
