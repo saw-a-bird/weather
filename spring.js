@@ -1,7 +1,7 @@
-export var rain = {
+export var spring = {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 10,
         "density": {
           "enable": true,
           "value_area": 1000
@@ -21,8 +21,11 @@ export var rain = {
         },
         "images": [
           {
-            "src": "../imgs/rain.png"
-          }
+            "src": "./imgs/spring/spring1.png"
+          },
+          {
+            "src": "./imgs/spring/spring2.png"
+          },
         ]
       },
       "opacity": {
