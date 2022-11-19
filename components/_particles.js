@@ -48,7 +48,6 @@ export function BackgroundArea ({ seasonId, api, dayPart }) {
 
         if (particleType != undefined) {
             weather_conditions[particleType].particles.move.direction = -api.wind.deg + ( api.wind.deg == 270? 0 : ( api.wind.deg < 270? -90 : 90));
-            alert(api.wind.deg)
             weather_conditions[particleType].particles.move.speed = api.wind.speed*5;
             setType(particleType);
         }
