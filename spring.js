@@ -58,7 +58,7 @@ export var spring = {
       "move": {
         "enable": true,
         "speed": 10,
-        "direction": "bottom-right",
+        "direction": "left",
         "random": false,
         "straight": true,
         "bounce": false,
