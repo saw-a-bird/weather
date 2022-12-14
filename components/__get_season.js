@@ -45,7 +45,6 @@ const seasons = [{
   
     return null;
   }
-
   // Handlers
 function currentSeason() {
     let date = new Date();
@@ -54,11 +53,11 @@ function currentSeason() {
     date.setHours(date.getHours() + offset);
     
     let season =  findSeason(seasons, date);
-    // if (season === null) {
-    //   return {date: date, name: 'No season'};
-    // } else {
-      return {date: date, id: "winter", name: "winter"};
-    // }
+    if (season === null) {
+      return {date: date, name: 'No season'};
+    } else {
+      return {date: date, id: season.id, name: season.name};
+    }
 }
 
 
