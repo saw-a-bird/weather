@@ -11,6 +11,7 @@ This app visually represents real-time weather conditions, including cloud densi
 
 ![Animation](https://github.com/user-attachments/assets/48ae5cf6-a0ad-42bc-bdd3-2fc6f5abb5fb)
 
+Live in [saw-a-bird.github.io/weather/](https://saw-a-bird.github.io/weather/)
 ---
 
 ## Features
@@ -25,6 +26,7 @@ This app visually represents real-time weather conditions, including cloud densi
 * **Temperature & Humidity Details**: Shows current temperature and humidity levels.
 
 Whoa now i wrote that, I know how much I invested in this little project😂
+
 --- 
 
 ## Technologies Used
