@@ -21,7 +21,7 @@ export var rain = {
         },
         "images": [
           {
-            "src": "./imgs/rain.png"
+            "src": "/weather/imgs/rain.png"
           }
         ]
       },

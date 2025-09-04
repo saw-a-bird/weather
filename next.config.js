@@ -2,8 +2,8 @@
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
-  basePath: '',        // <- THIS IS REQUIRED
-  assetPrefix: '',  // optional for production
+  basePath: '/weather',        // <- THIS IS REQUIRED
+  assetPrefix: isProd ? '/weather/' : '',  // optional for production
   reactStrictMode: true,
   images: {
     unoptimized: true,

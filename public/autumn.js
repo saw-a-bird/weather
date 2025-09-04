@@ -21,16 +21,16 @@ export var autumn = {
         },
         "images": [
           {
-            "src": "./imgs/autumn/autumn1.png"
+            "src": "/weather/imgs/autumn/autumn1.png"
           },
           {
-            "src": "./imgs/autumn/autumn2.png"
+            "src": "/weather/imgs/autumn/autumn2.png"
           },
           {
-            "src": "./imgs/autumn/autumn3.png"
+            "src": "/weather/imgs/autumn/autumn3.png"
           },
           {
-            "src": "../imgs/autumn/autumn4.png"
+            "src": "./weather/imgs/autumn/autumn4.png"
           },
         ]
       },

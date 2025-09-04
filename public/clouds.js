@@ -21,13 +21,13 @@ export var clouds = {
         },
         "images": [
           {
-            "src": "./imgs/clouds/cloud1.png"
+            "src": "/weather/imgs/clouds/cloud1.png"
           },
           {
-            "src": "./imgs/clouds/cloud2.png"
+            "src": "/weather/imgs/clouds/cloud2.png"
           },
           {
-            "src": "./imgs/clouds/cloud3.png"
+            "src": "/weather/imgs/clouds/cloud3.png"
           }
         ]
       },
