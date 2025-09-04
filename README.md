@@ -66,3 +66,4 @@ npm run dev
 * Include animated transitions for the tree and grass (according to wind speed)
 * Include a visualization of the current temperature and humidity.
 * Mobile-friendly interface
+* Make it more secure... (No backend is pretty terrible for NextJS applications, ya know)
