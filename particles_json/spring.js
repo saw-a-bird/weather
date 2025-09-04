@@ -21,10 +21,10 @@ export var spring = {
         },
         "images": [
           {
-            "src": "./imgs/spring/spring1.png"
+            "src": "../imgs/spring/spring1.png"
           },
           {
-            "src": "./imgs/spring/spring2.png"
+            "src": "../imgs/spring/spring2.png"
           },
         ]
       },
@@ -58,7 +58,7 @@ export var spring = {
       "move": {
         "enable": true,
         "speed": 10,
-        "direction": "left",
+        "direction": "bottom-right",
         "random": false,
         "straight": true,
         "bounce": false,

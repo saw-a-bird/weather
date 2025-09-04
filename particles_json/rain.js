@@ -1,7 +1,7 @@
-export var autumn = {
+export var rain = {
     "particles": {
       "number": {
-        "value": 10,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 1000
@@ -21,17 +21,8 @@ export var autumn = {
         },
         "images": [
           {
-            "src": "./imgs/autumn/autumn1.png"
-          },
-          {
-            "src": "./imgs/autumn/autumn2.png"
-          },
-          {
-            "src": "./imgs/autumn/autumn3.png"
-          },
-          {
-            "src": "../imgs/autumn/autumn4.png"
-          },
+            "src": "../imgs/rain.png"
+          }
         ]
       },
       "opacity": {
@@ -64,7 +55,7 @@ export var autumn = {
       "move": {
         "enable": true,
         "speed": 10,
-        "direction": "left",
+        "direction": "bottom-right",
         "random": false,
         "straight": true,
         "bounce": false,
