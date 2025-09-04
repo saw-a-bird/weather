@@ -21,10 +21,10 @@ export var spring = {
         },
         "images": [
           {
-            "src": "./imgs/spring/spring1.png"
+            "src": "/weather/imgs/spring/spring1.png"
           },
           {
-            "src": "./imgs/spring/spring2.png"
+            "src": "/weather/imgs/spring/spring2.png"
           },
         ]
       },
