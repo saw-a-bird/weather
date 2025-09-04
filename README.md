@@ -64,7 +64,6 @@ npm run dev
 
 ## Future Improvements
 
-* Add precipitation visualization (rain/snow)
 * Include animated transitions for the tree and grass (according to wind speed)
 * Include a visualization of the current temperature and humidity.
 * Mobile-friendly interface
