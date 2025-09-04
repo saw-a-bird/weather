@@ -3,19 +3,38 @@ const options = {
   enableHighAccuracy: true
 };
 
+const defaultCoords = { latitude: 40.7128, longitude: -74.0060 }; // New York
+
 async function weatherRequest() {
   if (!global.navigator.geolocation){
     alert('Geolocation is not supported by your browser');
   } else {
     var position = await getPosition().catch((error) => {
-      console.warn(`ERROR LOCATION: (${error.code}): ${error.message}`);
+    // use the constants instead of raw numbers for clarity
+    var errorMessage = null;
+    if (error.code === GeolocationPositionError.PERMISSION_DENIED) {
+      errorMessage = "User denied geolocation access";
+    } else if (error.code === GeolocationPositionError.POSITION_UNAVAILABLE) {
+      errorMessage = "Position unavailable (defaulting to New York)";
+    } else if (error.code === GeolocationPositionError.TIMEOUT) {
+      errorMessage = "Request timed out";
+    } else {
+      errorMessage = "Unknown geolocation error (Check console)";
+      console.warn(error);
+    }
+
+      alert(`Open-weather API error (code: ${error.code}): ${errorMessage}`);
       return null;
     });
 
-    if (position != null) {
-      const crd = position.coords;
+    var crd = null;
+    if (position == null) {
+      crd = defaultCoords;
+    } else {
+      crd = position.coords;
+    }
 
-      return await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+ crd.latitude + '&lon='+crd.longitude+'&appid=' + key)  
+    return await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+ crd.latitude + '&lon='+crd.longitude+'&appid=' + key)  
       .then(function(resp) { 
         return resp.json()
       })
@@ -23,8 +42,6 @@ async function weatherRequest() {
         console.warn(`ERROR FETCH: (${error.code}): ${error.message}`);
         return -1
       });
-
-    }
   }
 
   return -1;
