@@ -1,4 +1,4 @@
-export var spring = {
+export var autumn = {
     "particles": {
       "number": {
         "value": 10,
@@ -21,10 +21,16 @@ export var spring = {
         },
         "images": [
           {
-            "src": "../imgs/spring/spring1.png"
+            "src": "/weather/imgs/autumn/autumn1.png"
           },
           {
-            "src": "../imgs/spring/spring2.png"
+            "src": "/weather/imgs/autumn/autumn2.png"
+          },
+          {
+            "src": "/weather/imgs/autumn/autumn3.png"
+          },
+          {
+            "src": "./weather/imgs/autumn/autumn4.png"
           },
         ]
       },
@@ -58,7 +64,7 @@ export var spring = {
       "move": {
         "enable": true,
         "speed": 10,
-        "direction": "bottom-right",
+        "direction": "left",
         "random": false,
         "straight": true,
         "bounce": false,

@@ -55,7 +55,7 @@ export var snow = {
     move: {
       enable: true,
       speed: 1.5,
-      direction: "bottom",
+      direction: "left",
       random: false,
       straight: false,
       out_mode: "out",
